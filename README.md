@@ -2,11 +2,9 @@
 
 Interactive knowledge graph covering the protocols and technologies behind modern AI agents: MCP, A2A, Skills, agent frameworks, security, RAG, and more.
 
+**[Open the graph](https://vlytvynchyk.github.io/agent-protocols-graph/)**
+
 ![Main Window](docs/main-window.png)
-
-## Getting Started
-
-Open [`knowledge-graph.html`](knowledge-graph.html) in any browser. No build step, no dependencies, no server required.
 
 ## Features
 
