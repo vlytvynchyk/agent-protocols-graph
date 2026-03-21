@@ -1,0 +1,41 @@
+name: Daily Crawl
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-crawl
+  cancel-in-progress: true
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Extract graph data if missing
+        run: '[ -f knowledge-graph-data.json ] || node extract-data.mjs'
+
+      - name: Discover sources
+        run: node crawler.mjs --discover
+
+      - name: Crawl and generate digest
+        run: node crawler.mjs --digest ${{ secrets.DISCORD_WEBHOOK && format('--discord {0}', secrets.DISCORD_WEBHOOK) || '' }}
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add knowledge-graph-data.json digests/ .crawl-cache/
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: daily crawl $(date -u +%Y-%m-%d)"
+          git push

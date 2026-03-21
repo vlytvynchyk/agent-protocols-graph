@@ -1,0 +1,17 @@
+# Claude Code local settings
+.claude/
+
+# Crawler cache (rebuilt each crawl run)
+.crawl-cache/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Node
+node_modules/
+
+# Editor
+*.swp
+*.swo
+*~
