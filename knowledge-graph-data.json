@@ -1,0 +1,896 @@
+{
+  "nodes": [
+    {
+      "id": "ai",
+      "label": "AI Fundamentals",
+      "category": "core",
+      "status": "not-started",
+      "x": 500,
+      "y": 300,
+      "desc": "Foundation of artificial intelligence concepts",
+      "content": "## AI Fundamentals\n\nCore concepts that underpin modern AI systems.\n\n### Key Areas\n- Machine Learning basics\n- Neural Networks\n- Training vs. Inference\n- Supervised, Unsupervised, Reinforcement Learning\n- Evaluation metrics and benchmarks",
+      "timeline": [
+        {
+          "date": "2025-01-01",
+          "title": "Course created",
+          "desc": "Initial course structure defined.",
+          "tag": "new"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "id": "llms",
+      "label": "Large Language Models",
+      "category": "core",
+      "status": "not-started",
+      "x": 500,
+      "y": 150,
+      "desc": "Understanding LLMs - architecture, capabilities, limitations",
+      "content": "## Large Language Models\n\nLLMs are neural networks trained on massive text datasets to understand and generate human language.\n\n### Key Concepts\n- **Transformer architecture** - attention mechanism, positional encoding\n- **Training** - pre-training, fine-tuning, RLHF\n- **Tokens and context windows** - how text is processed\n- **Capabilities** - reasoning, code generation, summarization\n- **Limitations** - hallucination, knowledge cutoff, context limits\n- **Model families** - GPT, Claude, Gemini, Llama\n\n### Context Windows\n| Model | Context |\n|-------|--------|\n| Claude Opus 4.6 | 200K tokens |\n| GPT-4.5 | 128K tokens |\n| Gemini 2 | 1M+ tokens |",
+      "timeline": [],
+      "sources": []
+    },
+    {
+      "id": "agents",
+      "label": "AI Agents",
+      "category": "core",
+      "status": "not-started",
+      "x": 300,
+      "y": 50,
+      "desc": "Autonomous AI systems that reason, plan, and use tools",
+      "content": "## AI Agents\n\nAgents are AI systems that can autonomously reason, plan, and take actions to accomplish goals.\n\n### What Makes an Agent\n- **Reasoning** - can analyze problems and plan solutions\n- **Tool use** - can invoke external tools and APIs\n- **Memory** - maintains state across interactions\n- **Autonomy** - can initiate actions independently\n- **Multi-step** - executes complex workflows\n\n### Agent Architecture\n```\nUser Goal -> Agent (LLM + Planning) -> Tool Calls -> Results -> Next Step -> ... -> Final Output\n```\n\n### Examples\n- Claude Code (coding agent)\n- Devin (software engineering)\n- AutoGPT, CrewAI (general purpose)",
+      "timeline": [],
+      "sources": []
+    },
+    {
+      "id": "mcp",
+      "label": "MCP Protocol",
+      "category": "protocol",
+      "status": "not-started",
+      "x": 100,
+      "y": 200,
+      "desc": "Model Context Protocol - standard for agent-to-tool communication",
+      "content": "## Model Context Protocol (MCP)\n\nOpen standard that defines how AI agents interact with tools and resources. Think of it as **USB-C for AI**.\n\n### Architecture\n```\nHost (App) <-> MCP Client <-> MCP Server\n              (JSON-RPC)     (tools, resources)\n```\n\n### Three Primitives\n| Primitive | Purpose | Example |\n|-----------|---------|--------|\n| **Tools** | Functions the model can call | `search_db(query)` |\n| **Resources** | Data the model can read | `file://config.json` |\n| **Prompts** | Reusable templates | \"Summarize PR\" |\n\n### Key Properties\n- JSON-RPC 2.0 communication\n- Server discovery and capability negotiation\n- One host can connect to multiple servers\n- Model decides when to invoke tools",
+      "timeline": [
+        {
+          "date": "2025-11-03",
+          "title": "Server Instructions blog",
+          "desc": "MCP blog post on using server instructions for better tool guidance.",
+          "source": "https://blog.modelcontextprotocol.io/posts/2025-11-03-using-server-instructions/",
+          "tag": "new"
+        },
+        {
+          "date": "2025-11-20",
+          "title": "MCP Bundles (.mcpb) announced",
+          "desc": "Distribution format for MCP servers adopted into the MCP project.",
+          "source": "https://blog.modelcontextprotocol.io/posts/2025-11-20-adopting-mcpb/",
+          "tag": "new"
+        },
+        {
+          "date": "2025-11-21",
+          "title": "MCP Apps (SEP-1865)",
+          "desc": "Standardized extension for MCP servers to deliver interactive UIs.",
+          "source": "https://blog.modelcontextprotocol.io/posts/2025-11-21-mcp-apps/",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Model Context Protocol Blog",
+          "desc": "First crawl. Page has 2503 characters of content.",
+          "source": "https://blog.modelcontextprotocol.io/",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Architecture overview - Model Context Protocol",
+          "desc": "First crawl. Page has 21648 characters of content.",
+          "source": "https://modelcontextprotocol.io/docs/learn/architecture",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: https://modelcontextprotocol.io/specification/2025-11-25/server/tools.md",
+          "desc": "First crawl. Page has 12681 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/server/tools.md",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - modelcontextprotocol/modelcontextprotocol: Specification and documentation for the Model Context Protocol · GitHub",
+          "desc": "First crawl. Page has 5493 characters of content.",
+          "source": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Welcome to FastMCP - FastMCP",
+          "desc": "First crawl. Page has 4423 characters of content.",
+          "source": "https://gofastmcp.com/",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://blog.modelcontextprotocol.io/",
+        "https://spec.modelcontextprotocol.io",
+        "https://spec.modelcontextprotocol.io/",
+        "https://modelcontextprotocol.io/docs/learn/architecture",
+        "https://modelcontextprotocol.io/specification/2025-11-25/server/tools.md",
+        "https://github.com/modelcontextprotocol/modelcontextprotocol",
+        "https://gofastmcp.com/"
+      ]
+    },
+    {
+      "id": "mcp-instructions",
+      "label": "Server Instructions",
+      "category": "practice",
+      "status": "not-started",
+      "x": -100,
+      "y": 100,
+      "desc": "Injecting guidance into LLM system prompts for better tool use",
+      "content": "## MCP Server Instructions\n\nServer instructions let MCP servers inject guidance into the LLM system prompt.\n\n### When to Use\n- Cross-tool dependencies and sequencing\n- Rate limits and operational constraints\n- Multi-step workflow patterns\n- Conditional fallback behaviors\n\n### Measured Impact (40 sessions)\n- **With instructions:** 85% optimal workflow\n- **Without:** 60% optimal workflow\n\n### Best Practices\n```\nDO: Capture tool relationships, specify constraints\nDON'T: Repeat tool descriptions, add marketing\n```\n\n**Critical rule:** \"No instructions are better than poorly written instructions.\"",
+      "timeline": [
+        {
+          "date": "2025-11-03",
+          "title": "Blog post published",
+          "desc": "Detailed guide with measured results from GitHub PR review testing.",
+          "source": "https://blog.modelcontextprotocol.io/posts/2025-11-03-using-server-instructions/",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://blog.modelcontextprotocol.io/"
+      ]
+    },
+    {
+      "id": "mcp-bundles",
+      "label": "MCP Bundles (.mcpb)",
+      "category": "tool",
+      "status": "not-started",
+      "x": -100,
+      "y": 300,
+      "desc": "Distribution packages for MCP servers - single-click install",
+      "content": "## MCP Bundles (.mcpb)\n\nZIP archives containing an MCP server + metadata for single-click installation.\n\n### Bundle Structure\n```\nmy-server.mcpb\n  +-- manifest.json    (required)\n  +-- server/          (Node.js, Python, or binary)\n  +-- node_modules/    (dependencies)\n  +-- icon.png         (optional)\n```\n\n### Benefits\n- **Cross-client** - works in any MCP host\n- **One-click install** - no manual config\n- **Open-source** - `mcpb` CLI for creating bundles",
+      "timeline": [
+        {
+          "date": "2025-11-20",
+          "title": "Moved to MCP project",
+          "desc": "Originally developed for Claude Desktop, now open-source under MCP project.",
+          "source": "https://blog.modelcontextprotocol.io/posts/2025-11-20-adopting-mcpb/",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://blog.modelcontextprotocol.io/"
+      ]
+    },
+    {
+      "id": "skills",
+      "label": "Agent Skills",
+      "category": "practice",
+      "status": "not-started",
+      "x": -200,
+      "y": 200,
+      "desc": "Rich workflow instructions that teach agents how to do complex tasks",
+      "content": "## Agent Skills\n\nFolders of instructions, scripts, and resources that agents load on demand to perform tasks accurately.\n\n### Why Skills?\nTools tell agents **what they can do**. Skills tell agents **how to accomplish workflows**.\n\n### SKILL.md Format\n```yaml\n---\nname: quarterly-analysis\ndescription: Generates quarterly reports...\nmetadata:\n  author: finance-team\n  version: \"1.0\"\n---\n```\n\n### Progressive Disclosure\n1. **Metadata** (~100 tokens) - loaded at startup\n2. **Instructions** (<5000 tokens) - loaded when activated\n3. **Resources** (on demand) - scripts, references\n\n### Adopted By\nClaude Code, Cursor, VS Code, Gemini CLI, OpenAI Codex, 25+ more",
+      "timeline": [
+        {
+          "date": "2025-06-01",
+          "title": "Agent Skills spec released",
+          "desc": "Open standard by Anthropic for agent workflow instructions.",
+          "source": "https://agentskills.io",
+          "tag": "new"
+        },
+        {
+          "date": "2025-12-01",
+          "title": "Skills Over MCP IG formed",
+          "desc": "Interest Group exploring how skills integrate with MCP protocol.",
+          "source": "https://github.com/modelcontextprotocol/experimental-ext-skills",
+          "tag": "new"
+        },
+        {
+          "date": "2026-01-15",
+          "title": "SEP-2076 draft submitted",
+          "desc": "Proposal for skills as first-class MCP primitive.",
+          "tag": "update"
+        },
+        {
+          "date": "2026-02-01",
+          "title": "Experimental findings published",
+          "desc": "Agents don't auto-discover skills; adherence decays over time; skill:// resources work well.",
+          "tag": "update"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Overview - Agent Skills",
+          "desc": "First crawl. Page has 2673 characters of content.",
+          "source": "https://agentskills.io",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - modelcontextprotocol/experimental-ext-skills: Experimental exploration of skills discovery and distribution through MCP primitives. Maintained by the Skills Over MCP Interest Group. · GitHub",
+          "desc": "First crawl. Page has 10469 characters of content.",
+          "source": "https://github.com/modelcontextprotocol/experimental-ext-skills",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Overview - Agent Skills",
+          "desc": "First crawl. Page has 2673 characters of content.",
+          "source": "https://agentskills.io/",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - agentskills/agentskills: Specification and documentation for Agent Skills · GitHub",
+          "desc": "First crawl. Page has 4723 characters of content.",
+          "source": "https://github.com/agentskills/agentskills",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - anthropics/skills: Public repository for Agent Skills · GitHub",
+          "desc": "First crawl. Page has 8431 characters of content.",
+          "source": "https://github.com/anthropics/skills",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://agentskills.io",
+        "https://github.com/modelcontextprotocol/experimental-ext-skills",
+        "https://blog.modelcontextprotocol.io/",
+        "https://agentskills.io/",
+        "https://github.com/agentskills/agentskills",
+        "https://github.com/anthropics/skills",
+        "https://gofastmcp.com/"
+      ]
+    },
+    {
+      "id": "skills-over-mcp",
+      "label": "Skills Over MCP",
+      "category": "practice",
+      "status": "not-started",
+      "x": -350,
+      "y": 200,
+      "desc": "Active initiative exploring how skills are discovered and consumed through MCP",
+      "content": "## Skills Over MCP Interest Group\n\n### Six Approaches\n1. **First-Class Primitive (SEP-2076)** - `skills/list`, `skills/get`\n2. **Registry Metadata** - skill refs in registry entries\n3. **Skills as Tools/Resources** - `skill://` URI scheme\n4. **Gateway Pattern** - wrapper composing multiple MCPs\n5. **Server Instructions Ref** - pointer to skill resources\n6. **Official Convention** - documented patterns, no protocol changes\n\n### Key Findings\n- Agents don't naturally discover skills\n- Adherence decays over time as context grows\n- `skill://` resource colocation works well\n\n### Open Questions\n- Convention vs. protocol extension?\n- Who controls loading (model vs. app)?\n- Multi-server dependencies?\n- Security and trust model?",
+      "timeline": [
+        {
+          "date": "2026-01-01",
+          "title": "Six approaches documented",
+          "desc": "Problem statement, use cases, and approaches published.",
+          "source": "https://github.com/modelcontextprotocol/experimental-ext-skills/blob/main/docs/approaches.md",
+          "tag": "new"
+        },
+        {
+          "date": "2026-02-01",
+          "title": "Experimental findings",
+          "desc": "McpGraph, Skilljack, FastMCP 3.0, NimbleBrain skill:// findings published.",
+          "tag": "update"
+        },
+        {
+          "date": "2026-02-26",
+          "title": "Office Hours discussion",
+          "desc": "Community alignment on requirements, evaluation of approaches.",
+          "tag": "update"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - modelcontextprotocol/registry: A community driven registry service for Model Context Protocol (MCP) servers. · GitHub",
+          "desc": "First crawl. Page has 10236 characters of content.",
+          "source": "https://github.com/modelcontextprotocol/registry",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - cloudflare/agent-skills-discovery-rfc · GitHub",
+          "desc": "First crawl. Page has 14311 characters of content.",
+          "source": "https://github.com/cloudflare/agent-skills-discovery-rfc",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://github.com/modelcontextprotocol/experimental-ext-skills",
+        "https://agentskills.io/",
+        "https://github.com/modelcontextprotocol/registry",
+        "https://github.com/cloudflare/agent-skills-discovery-rfc"
+      ]
+    },
+    {
+      "id": "a2a",
+      "label": "A2A Protocol",
+      "category": "protocol",
+      "status": "not-started",
+      "x": 300,
+      "y": 350,
+      "desc": "Agent-to-Agent protocol for peer collaboration between autonomous agents",
+      "content": "## Agent2Agent Protocol (A2A)\n\nEnables independent AI agents to collaborate as peers.\n\n### Core Capabilities\n1. **Discovery** - agents find each other\n2. **Task Negotiation** - propose, accept, decline\n3. **Shared Context** - pass rich context\n4. **Complex Data Exchange** - files, artifacts\n5. **Multi-turn Dialogue** - extended conversations\n\n### Agent vs Tool Test\n*\"Does it require reasoning or multi-turn negotiation?\"*\n- **No** -> Tool (MCP)\n- **Yes** -> Agent (A2A)\n\n### Interaction Model\n```\nClient Agent --> Task Request --> Remote Agent\n             <-- Clarifying Q  <--\n             --> Context       -->\n             <-- Final Result  <--\n```",
+      "timeline": [
+        {
+          "date": "2025-04-01",
+          "title": "A2A Protocol announced",
+          "desc": "Google announces the Agent-to-Agent protocol.",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Redirecting",
+          "desc": "First crawl. Page has 38 characters of content.",
+          "source": "https://a2a-protocol.org",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Redirecting",
+          "desc": "First crawl. Page has 38 characters of content.",
+          "source": "https://a2a-protocol.org/",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://a2a-protocol.org",
+        "https://a2a-protocol.org/"
+      ]
+    },
+    {
+      "id": "mcp-a2a",
+      "label": "MCP + A2A Integration",
+      "category": "practice",
+      "status": "not-started",
+      "x": 100,
+      "y": 400,
+      "desc": "How MCP and A2A work together in layered architecture",
+      "content": "## MCP + A2A Together\n\n```\nA2A  = Agent-to-Agent (collaboration)\nMCP  = Agent-to-Tool (capability access)\n```\n\n### Auto Repair Shop Example\n| Interaction | Protocol |\n|-------------|----------|\n| Customer describes problem | A2A |\n| Manager diagnoses | A2A |\n| Mechanic runs scanner | **MCP** |\n| Mechanic checks manual | **MCP** |\n| Mechanic orders parts | A2A |\n\n### Design Patterns\n- **Hub and Spoke** - orchestrator delegates via A2A\n- **Peer Network** - equals collaborate via A2A\n- **Hierarchical** - layers decompose via A2A, execute via MCP",
+      "timeline": [
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: A2A and MCP - A2A Protocol",
+          "desc": "First crawl. Page has 7693 characters of content.",
+          "source": "https://a2a-protocol.org/latest/topics/a2a-and-mcp/",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://a2a-protocol.org/latest/topics/a2a-and-mcp/",
+        "https://a2a-protocol.org/"
+      ]
+    },
+    {
+      "id": "agent-uis",
+      "label": "Agent UIs",
+      "category": "ui",
+      "status": "not-started",
+      "x": 600,
+      "y": 100,
+      "desc": "Technologies for agents to present rich visual interfaces",
+      "content": "## Agent User Interfaces\n\nAgents need visual capabilities beyond text.\n\n### The Problem\n- Data viz returns JSON, not charts\n- Form agent describes fields, not actual forms\n- Dashboards as text tables\n\n### Two Solutions\n| Aspect | MCP Apps | A2UI |\n|--------|----------|------|\n| Format | HTML (iframe) | JSON |\n| Rendering | Server controls | Client native |\n| Security | Sandbox + review | Pre-approved catalog |\n| Protocol | MCP | Agnostic |\n| Framework | Web only | Any |",
+      "timeline": [],
+      "sources": []
+    },
+    {
+      "id": "mcp-apps",
+      "label": "MCP Apps (SEP-1865)",
+      "category": "ui",
+      "status": "not-started",
+      "x": 700,
+      "y": 250,
+      "desc": "MCP extension for servers to deliver interactive HTML UIs to hosts",
+      "content": "## MCP Apps (SEP-1865)\n\nServers deliver **interactive HTML UIs** to host applications.\n\n### How It Works\n1. Register UI templates (`ui://` URI scheme)\n2. Tool returns result + UI reference\n3. Host renders in sandboxed iframe\n4. Interactions via JSON-RPC postMessage\n\n### Security (Defense-in-Depth)\n- Iframe sandboxing\n- Template pre-review\n- Auditable JSON-RPC messaging\n- User consent for tool invocations\n\n### Key Decisions\n- Templates pre-declared, not inline\n- HTML-first (sandboxed iframes)\n- Optional and backward-compatible\n- Text fallbacks recommended",
+      "timeline": [
+        {
+          "date": "2025-11-21",
+          "title": "SEP-1865 published",
+          "desc": "Collaboration between Anthropic, OpenAI, and MCP UI Community WG.",
+          "source": "https://blog.modelcontextprotocol.io/posts/2025-11-21-mcp-apps/",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://blog.modelcontextprotocol.io/"
+      ]
+    },
+    {
+      "id": "a2ui",
+      "label": "A2UI (Google)",
+      "category": "ui",
+      "status": "not-started",
+      "x": 800,
+      "y": 100,
+      "desc": "Declarative JSON format for agents to describe UI intent rendered natively",
+      "content": "## A2UI - Agent-to-User Interface\n\nAgents describe UI **declaratively via JSON**. Clients render using native components.\n\n### Core Principles\n1. **Security-First** - intent, not code\n2. **LLM-Optimized** - flat component list\n3. **Framework-Agnostic** - Flutter, React, Angular\n4. **Extensible** - Smart Wrappers\n\n### Example\n```json\n{\n  \"components\": [\n    {\"id\":\"chart1\",\"type\":\"bar-chart\",\"data\":{...}},\n    {\"id\":\"btn1\",\"type\":\"button\",\"label\":\"Export\"}\n  ]\n}\n```\nClient maps `bar-chart` -> native `<BarChart>` component.",
+      "timeline": [
+        {
+          "date": "2025-09-01",
+          "title": "A2UI open-sourced",
+          "desc": "Google releases A2UI framework.",
+          "source": "https://github.com/google/a2ui",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - google/A2UI · GitHub",
+          "desc": "First crawl. Page has 10194 characters of content.",
+          "source": "https://github.com/google/a2ui",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://github.com/google/a2ui"
+      ]
+    },
+    {
+      "id": "mcp-auth",
+      "label": "MCP Authorization",
+      "category": "protocol",
+      "status": "not-started",
+      "x": -200,
+      "y": 400,
+      "desc": "OAuth 2.1 based authorization for remote MCP servers",
+      "content": "## MCP Authorization (OAuth 2.1)\n\nMCP provides transport-level authorization enabling clients to access protected remote servers on behalf of users.\n\n### Key Concepts\n- **OAuth 2.1 based** - uses PKCE, refresh token rotation, HTTPS-only\n- **Protected Resource Metadata** (RFC 9728) - servers advertise their authorization server\n- **Dynamic Client Registration** (RFC 7591) - clients register without prior relationship\n- **Client ID Metadata Documents** - HTTPS URLs as client identifiers\n- **Resource Indicators** (RFC 8707) - tokens bound to specific MCP servers\n\n### Authorization Flow\n```\n1. Client -> MCP Server (no token)\n2. Server -> 401 + WWW-Authenticate header\n3. Client discovers auth server via Protected Resource Metadata\n4. Client -> Auth Server (PKCE authorization code flow)\n5. User authenticates and consents\n6. Client receives access token\n7. Client -> MCP Server (with Bearer token)\n```\n\n### Security Requirements\n- PKCE mandatory (S256 method)\n- Audience validation (servers MUST verify tokens are for them)\n- Token passthrough forbidden\n- Scope-based step-up authorization\n\n### Three Registration Approaches\n1. **Client ID Metadata Documents** (most common, no prior relationship)\n2. **Pre-registration** (existing relationship)\n3. **Dynamic Client Registration** (backwards compatibility)",
+      "timeline": [
+        {
+          "date": "2025-06-18",
+          "title": "Authorization spec drafted",
+          "desc": "OAuth 2.1 integration defined in MCP spec.",
+          "tag": "new"
+        },
+        {
+          "date": "2025-11-25",
+          "title": "Auth extensions repository",
+          "desc": "Modular authorization extensions published separately.",
+          "tag": "update"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization.md",
+          "desc": "First crawl. Page has 40488 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization.md",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - modelcontextprotocol/ext-auth: Extensions to authorization · GitHub",
+          "desc": "First crawl. Page has 5516 characters of content.",
+          "source": "https://github.com/modelcontextprotocol/ext-auth",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization.md",
+        "https://github.com/modelcontextprotocol/ext-auth"
+      ]
+    },
+    {
+      "id": "mcp-transport",
+      "label": "Streamable HTTP",
+      "category": "protocol",
+      "status": "not-started",
+      "x": -300,
+      "y": 350,
+      "desc": "Modern HTTP transport replacing SSE - supports remote MCP servers with sessions and resumability",
+      "content": "## Streamable HTTP Transport\n\nReplaces the older HTTP+SSE transport (from protocol version 2024-11-05) with a more flexible approach.\n\n### How It Works\n- Client sends JSON-RPC messages as **HTTP POST** to a single MCP endpoint\n- Server responds with either `application/json` (single response) or `text/event-stream` (SSE stream)\n- Client can also **HTTP GET** the endpoint to open a server-initiated SSE stream\n\n### Key Features\n| Feature | Description |\n|---------|-------------|\n| **Session Management** | `Mcp-Session-Id` header for stateful sessions |\n| **Resumability** | SSE event IDs + `Last-Event-ID` for reconnection |\n| **Multiple Connections** | Client can have multiple SSE streams simultaneously |\n| **Security** | Origin validation, localhost binding, authentication |\n\n### vs. stdio Transport\n```\nstdio:           Local process, stdin/stdout, single client\nStreamable HTTP:  Remote server, HTTP POST/SSE, multiple clients\n```\n\n### Session Lifecycle\n1. Client POSTs `InitializeRequest`\n2. Server returns `Mcp-Session-Id` header\n3. Client includes session ID in all subsequent requests\n4. Client sends HTTP DELETE to terminate session\n\n### Protocol Version Header\nAll requests MUST include `MCP-Protocol-Version: 2025-06-18` header.",
+      "timeline": [
+        {
+          "date": "2025-03-26",
+          "title": "Streamable HTTP introduced",
+          "desc": "Replaces HTTP+SSE transport from 2024-11-05 spec.",
+          "tag": "new"
+        },
+        {
+          "date": "2025-06-18",
+          "title": "Session management added",
+          "desc": "Mcp-Session-Id and resumability features added.",
+          "tag": "update"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Transports - Model Context Protocol",
+          "desc": "First crawl. Page has 11523 characters of content.",
+          "source": "https://modelcontextprotocol.io/docs/concepts/transports",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://modelcontextprotocol.io/docs/concepts/transports",
+        "https://modelcontextprotocol.io/docs/learn/architecture"
+      ]
+    },
+    {
+      "id": "mcp-sampling",
+      "label": "MCP Sampling",
+      "category": "protocol",
+      "status": "not-started",
+      "x": -350,
+      "y": 100,
+      "desc": "Servers request LLM completions through the client - enables agentic server behavior",
+      "content": "## MCP Sampling\n\nAllows MCP servers to request language model completions through the client, enabling agentic behaviors without the server needing its own LLM access.\n\n### Why It Matters\n- Server authors get LLM access without paying for or integrating an AI model\n- Client maintains full control over permissions and security\n- Separate context window from the main conversation\n\n### How It Works\n```\nServer -> sampling/createMessage -> Client\nClient -> (optional) User reviews request\nClient -> LLM (forward request)\nLLM -> Client (generation)\nClient -> (optional) User reviews response\nClient -> Server (approved response)\n```\n\n### Request Parameters\n```json\n{\n  \"messages\": [...],\n  \"modelPreferences\": {\n    \"hints\": [{\"name\": \"claude-sonnet-4-20250514\"}],\n    \"costPriority\": 0.3,\n    \"speedPriority\": 0.2,\n    \"intelligencePriority\": 0.9\n  },\n  \"systemPrompt\": \"You are a travel expert...\",\n  \"maxTokens\": 1500\n}\n```\n\n### Human-in-the-Loop\n- Users can review and modify requests before LLM processing\n- Users can review and modify responses before returning to server\n- Rate limiting and content validation by client",
+      "timeline": [
+        {
+          "date": "2025-06-18",
+          "title": "Sampling spec published",
+          "desc": "Client primitive for server-initiated LLM completions.",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Understanding MCP clients - Model Context Protocol",
+          "desc": "First crawl. Page has 12857 characters of content.",
+          "source": "https://modelcontextprotocol.io/docs/learn/client-concepts",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://modelcontextprotocol.io/docs/learn/client-concepts"
+      ]
+    },
+    {
+      "id": "mcp-elicitation",
+      "label": "MCP Elicitation",
+      "category": "protocol",
+      "status": "not-started",
+      "x": -450,
+      "y": 200,
+      "desc": "Servers request structured user input mid-flow via JSON Schema forms",
+      "content": "## MCP Elicitation\n\nEnables servers to request specific information from users during interactions, creating dynamic workflows that adapt to user needs.\n\n### The Problem It Solves\nWithout elicitation, servers must either:\n- Require all information upfront\n- Fail when data is missing\n\nWith elicitation, servers can pause and ask the user for input mid-operation.\n\n### How It Works\n```\nServer -> elicitation/create -> Client\nClient -> presents UI to user\nUser -> provides information\nClient -> returns response to Server\nServer -> continues processing\n```\n\n### Schema-Based Input\n```json\n{\n  \"method\": \"elicitation/requestInput\",\n  \"params\": {\n    \"message\": \"Confirm your booking details:\",\n    \"schema\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"confirmBooking\": { \"type\": \"boolean\" },\n        \"seatPreference\": {\n          \"type\": \"string\",\n          \"enum\": [\"window\", \"aisle\", \"no preference\"]\n        }\n      },\n      \"required\": [\"confirmBooking\"]\n    }\n  }\n}\n```\n\n### Response Options\nUsers can:\n- Provide the requested information\n- Decline with optional explanation\n- Cancel the entire operation\n\n### Privacy\n- Never requests passwords or API keys\n- Clients warn about suspicious requests\n- Users review data before sending",
+      "timeline": [
+        {
+          "date": "2025-06-18",
+          "title": "Elicitation spec published",
+          "desc": "Client primitive for server-initiated user input requests.",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation.md",
+          "desc": "First crawl. Page has 28705 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation.md",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation.md",
+        "https://modelcontextprotocol.io/docs/learn/client-concepts"
+      ]
+    },
+    {
+      "id": "mcp-tasks",
+      "label": "MCP Tasks",
+      "category": "protocol",
+      "status": "not-started",
+      "x": -400,
+      "y": 350,
+      "desc": "Experimental durable execution wrappers for long-running MCP operations",
+      "content": "## MCP Tasks (Experimental)\n\nDurable state machines that wrap MCP requests, enabling deferred result retrieval and status tracking for expensive or long-running operations.\n\n### When to Use\n- Expensive computations (data analysis, ML inference)\n- Batch processing requests\n- Multi-step operations with user input needed mid-flow\n- Workflow automation\n\n### Task Lifecycle\n```\n[*] -> working\nworking -> input_required | completed | failed | cancelled\ninput_required -> working | completed | failed | cancelled\ncompleted/failed/cancelled -> [*]  (terminal states)\n```\n\n### Two-Phase Response Pattern\n1. **Phase 1:** Server accepts request, returns `CreateTaskResult` with taskId immediately\n2. **Phase 2:** Client polls `tasks/get`, then retrieves result via `tasks/result`\n\n### Key Methods\n| Method | Purpose |\n|--------|--------|\n| `tools/call` + `task` field | Create task-augmented request |\n| `tasks/get` | Poll task status |\n| `tasks/result` | Retrieve final result (blocks until terminal) |\n| `tasks/list` | List all tasks (paginated) |\n| `tasks/cancel` | Cancel a running task |\n\n### Task Properties\n- `taskId` - unique identifier\n- `status` - working/input_required/completed/failed/cancelled\n- `ttl` - time-to-live in milliseconds\n- `pollInterval` - suggested polling frequency\n- `createdAt` / `lastUpdatedAt` - ISO 8601 timestamps\n\n### input_required Status\nWhen server needs user input mid-task, it transitions to `input_required` and sends an elicitation request tagged with the task ID.",
+      "timeline": [
+        {
+          "date": "2025-11-25",
+          "title": "Tasks spec (experimental)",
+          "desc": "Durable execution wrappers added to MCP spec as experimental feature.",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks.md",
+          "desc": "First crawl. Page has 34351 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks.md",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks.md"
+      ]
+    },
+    {
+      "id": "structured-output",
+      "label": "Structured Outputs",
+      "category": "practice",
+      "status": "not-started",
+      "x": 500,
+      "y": 450,
+      "desc": "JSON Schema validated tool outputs for reliable agent-to-tool data exchange",
+      "content": "## Structured Outputs in MCP\n\nTools can define an `outputSchema` (JSON Schema) so clients and LLMs can validate and parse results reliably.\n\n### How It Works\nTools declare both `inputSchema` and `outputSchema`:\n```json\n{\n  \"name\": \"get_weather_data\",\n  \"inputSchema\": {\n    \"type\": \"object\",\n    \"properties\": { \"location\": { \"type\": \"string\" } }\n  },\n  \"outputSchema\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"temperature\": { \"type\": \"number\" },\n      \"conditions\": { \"type\": \"string\" }\n    },\n    \"required\": [\"temperature\", \"conditions\"]\n  }\n}\n```\n\n### Dual Response Format\nFor backwards compatibility, tools return both:\n- `content` - unstructured text (legacy)\n- `structuredContent` - validated JSON object (new)\n\n### Benefits\n- **Schema validation** of responses\n- **Type information** for programming language integration\n- **Better LLM parsing** of returned data\n- **Documentation** and developer experience\n\n### Content Types in Tool Results\nMCP tools can return rich content:\n- **Text** - plain text responses\n- **Images** - base64 encoded with MIME type\n- **Audio** - base64 encoded audio data\n- **Resource Links** - URIs to fetch later\n- **Embedded Resources** - inline resource data\n\nAll content types support **annotations** with audience, priority, and modification timestamps.",
+      "timeline": [
+        {
+          "date": "2025-11-25",
+          "title": "Output schemas added",
+          "desc": "Tools can now define outputSchema for validated structured results.",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/server/tools.md"
+      ]
+    },
+    {
+      "id": "agent-frameworks",
+      "label": "Agent Frameworks",
+      "category": "tool",
+      "status": "not-started",
+      "x": 600,
+      "y": 350,
+      "desc": "Development frameworks for building AI agents - LangGraph, CrewAI, AutoGen, Semantic Kernel",
+      "content": "## Agent Frameworks\n\nFrameworks that provide structure for building AI agents with tool use, memory, and multi-step reasoning.\n\n### Major Frameworks\n| Framework | By | Focus |\n|-----------|-----|-------|\n| **LangGraph** | LangChain | Stateful, graph-based agent workflows |\n| **CrewAI** | CrewAI | Multi-agent role-based collaboration |\n| **AutoGen** | Microsoft | Multi-agent conversation patterns |\n| **Semantic Kernel** | Microsoft | Enterprise AI orchestration (.NET/Python) |\n| **PydanticAI** | Pydantic | Type-safe Python agents |\n| **FastMCP** | Community | Pythonic MCP server framework |\n\n### How They Relate to MCP/A2A\n```\nFramework provides:  Agent structure, memory, orchestration\nMCP provides:        Standardized tool access\nA2A provides:        Standardized agent-to-agent communication\n```\n\nFrameworks are increasingly adopting MCP:\n- **LangGraph** - MCP client integration\n- **PydanticAI** - native MCP tool support + skills via PR #3780\n- **FastMCP 3.0** - native skills provider\n- **Semantic Kernel** - MCP server connectivity\n\n### Key Patterns\n- **ReAct** - Reason + Act loop (think, use tool, observe, repeat)\n- **Plan-and-Execute** - create plan first, then execute steps\n- **Reflexion** - self-reflection and correction after errors\n- **Chain of Thought** - step-by-step reasoning before action",
+      "timeline": [
+        {
+          "date": "2025-01-01",
+          "title": "Framework landscape matures",
+          "desc": "Major frameworks converge on MCP support.",
+          "tag": "update"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - langchain-ai/langgraph: Build resilient language agents as graphs. · GitHub",
+          "desc": "First crawl. Page has 7901 characters of content.",
+          "source": "https://github.com/langchain-ai/langgraph",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - crewAIInc/crewAI: Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks. · GitHub",
+          "desc": "First crawl. Page has 30930 characters of content.",
+          "source": "https://github.com/crewAIInc/crewAI",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: GitHub - pydantic/pydantic-ai: GenAI Agent Framework, the Pydantic way · GitHub",
+          "desc": "First crawl. Page has 13176 characters of content.",
+          "source": "https://github.com/pydantic/pydantic-ai",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://gofastmcp.com/",
+        "https://github.com/langchain-ai/langgraph",
+        "https://github.com/crewAIInc/crewAI",
+        "https://github.com/pydantic/pydantic-ai"
+      ]
+    },
+    {
+      "id": "agent-security",
+      "label": "Agent Security",
+      "category": "practice",
+      "status": "not-started",
+      "x": 700,
+      "y": 400,
+      "desc": "Security patterns for AI agents - prompt injection defense, sandboxing, trust models",
+      "content": "## Agent Security\n\nCritical security considerations when building and deploying AI agents.\n\n### Threat Categories\n1. **Prompt Injection** - malicious instructions in tool outputs or user inputs\n2. **Tool Misuse** - agents calling destructive tools without proper authorization\n3. **Data Exfiltration** - sensitive data leaking through tool calls\n4. **Confused Deputy** - agents acting on behalf of wrong principal\n\n### MCP Security Model\n- Tool annotations mark behavior (read-only, destructive, idempotent)\n- Clients MUST treat annotations as untrusted from untrusted servers\n- Human-in-the-loop for sensitive operations\n- Show tool inputs to users before calling server\n- Rate limiting on tool invocations\n\n### Defense Layers\n```\n1. Input Validation    - sanitize all inputs at boundaries\n2. Permission Model    - user consent for tool invocations\n3. Sandboxing         - isolated execution environments\n4. Audit Logging      - track all tool usage\n5. Token Scoping      - least-privilege access tokens\n```\n\n### Tool Annotations (Hints)\n- `readOnlyHint` - tool does not modify state\n- `destructiveHint` - tool may perform destructive operations\n- `idempotentHint` - safe to call multiple times\n- `openWorldHint` - tool interacts with external entities\n\n### Trust Hierarchy\nSkills are untrusted documents, not directives. Trust should align with MCP server trust level. Clients MUST NOT auto-apply skills without explicit policy.",
+      "timeline": [
+        {
+          "date": "2025-11-25",
+          "title": "Security best practices published",
+          "desc": "MCP spec includes comprehensive security considerations and tool annotations.",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-22",
+          "title": "Content updated: Security Best Practices - Model Context Protocol",
+          "desc": "First crawl. Page has 23667 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices",
+          "tag": "new"
+        }
+      ],
+      "sources": [
+        "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices",
+        "https://modelcontextprotocol.io/specification/2025-11-25/server/tools.md"
+      ]
+    },
+    {
+      "id": "rag",
+      "label": "RAG Patterns",
+      "category": "practice",
+      "status": "not-started",
+      "x": 400,
+      "y": 500,
+      "desc": "Retrieval-Augmented Generation - connecting LLMs to external knowledge via MCP resources",
+      "content": "## Retrieval-Augmented Generation (RAG)\n\nRAG enhances LLM responses by retrieving relevant external data before generation. MCP Resources provide a standardized way to implement RAG.\n\n### Core RAG Pipeline\n```\nQuery -> Embed -> Search Vector DB -> Retrieve Chunks -> Augment Prompt -> Generate\n```\n\n### How RAG Maps to MCP\n| RAG Component | MCP Primitive |\n|---------------|---------------|\n| Document store | Resources (`resources/list`, `resources/read`) |\n| Search/retrieval | Tools (`search_documents(query)`) |\n| Knowledge updates | Resource subscriptions (`resources/subscribe`) |\n| Structured data | Resource templates (`docs://{collection}/{id}`) |\n\n### Key Patterns\n- **Naive RAG** - embed query, find similar chunks, augment prompt\n- **Advanced RAG** - query rewriting, re-ranking, hybrid search\n- **Agentic RAG** - agent decides what to retrieve and when\n- **Graph RAG** - knowledge graph + vector search combined\n\n### MCP Resource Features for RAG\n- **Direct Resources** - fixed URIs to specific data\n- **Resource Templates** - parameterized queries (`weather://forecast/{city}`)\n- **Subscriptions** - real-time updates when data changes\n- **MIME types** - proper content type handling\n- **Annotations** - audience, priority, and modification timestamps\n\n### Embedding Models\nCommon choices: OpenAI text-embedding-3, Cohere embed-v3, local models (sentence-transformers). Vector stores: Pinecone, Weaviate, Chroma, pgvector.",
+      "timeline": [
+        {
+          "date": "2025-01-01",
+          "title": "RAG patterns established",
+          "desc": "Retrieval-augmented generation becomes standard agent architecture pattern.",
+          "tag": "update"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "id": "agent-memory",
+      "label": "Agent Memory",
+      "category": "practice",
+      "status": "not-started",
+      "x": 200,
+      "y": 500,
+      "desc": "How agents maintain state across sessions - context window, vector stores, knowledge graphs",
+      "content": "## Agent Memory & State\n\nAgents need memory to be useful beyond single-turn interactions.\n\n### Memory Types\n| Type | Mechanism | Persistence |\n|------|-----------|-------------|\n| **Short-term** | Context window | Session only |\n| **Long-term** | Vector DB / Knowledge Graph | Across sessions |\n| **Episodic** | Stored interaction logs | Across sessions |\n| **Procedural** | Skills / CLAUDE.md files | Permanent |\n\n### Short-Term (Context Window)\n- Conversation history within current context\n- Limited by window size (200K tokens for Claude)\n- \"Lost in the middle\" - attention degrades with length\n- Strategy: summarize older messages to compress\n\n### Long-Term (Vector DB)\n```\nExperience -> Embed -> Store in Vector DB\nNew query -> Embed -> Similarity search -> Retrieve relevant memories\n```\nThis is RAG applied to the agent's own history.\n\n### Knowledge Graphs\n- Structured memory: entities + relationships\n- Better than vectors for precise factual recall\n- Can combine with vector search (hybrid)\n\n### Episodic Memory\nRecording specific episodes: what happened, actions taken, outcome.\nEnables learning from successes and failures.\n(Stanford \"Generative Agents\" paper, 2023)\n\n### Procedural / Skill Memory\n- Agent Skills (SKILL.md) as compiled procedural knowledge\n- CLAUDE.md project files as persistent memory\n- Reusable patterns saved for future tasks\n\n### Architecture Patterns\n- Read-write memory within sessions\n- Reflection loops for consolidation\n- Memory scoping (user / project / org level)\n- Relevance decay for outdated information",
+      "timeline": [
+        {
+          "date": "2023-04-01",
+          "title": "Generative Agents paper",
+          "desc": "Stanford demonstrates agents with episodic memory and reflection.",
+          "tag": "new"
+        },
+        {
+          "date": "2025-01-01",
+          "title": "Memory patterns mature",
+          "desc": "Vector-based long-term memory becomes standard in agent frameworks.",
+          "tag": "update"
+        }
+      ],
+      "sources": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "ai",
+      "target": "llms",
+      "label": "enables"
+    },
+    {
+      "source": "llms",
+      "target": "agents",
+      "label": "powers"
+    },
+    {
+      "source": "agents",
+      "target": "mcp",
+      "label": "uses"
+    },
+    {
+      "source": "agents",
+      "target": "a2a",
+      "label": "uses"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp-instructions",
+      "label": "extends"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp-bundles",
+      "label": "extends"
+    },
+    {
+      "source": "mcp",
+      "target": "skills",
+      "label": "related"
+    },
+    {
+      "source": "skills",
+      "target": "skills-over-mcp",
+      "label": "extends"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp-a2a",
+      "label": "part of"
+    },
+    {
+      "source": "a2a",
+      "target": "mcp-a2a",
+      "label": "part of"
+    },
+    {
+      "source": "agents",
+      "target": "agent-uis",
+      "label": "presents via"
+    },
+    {
+      "source": "agent-uis",
+      "target": "mcp-apps",
+      "label": "extends"
+    },
+    {
+      "source": "agent-uis",
+      "target": "a2ui",
+      "label": "extends"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp-apps",
+      "label": "extends"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp-auth",
+      "label": "requires"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp-transport",
+      "label": "requires"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp-sampling",
+      "label": "extends"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp-elicitation",
+      "label": "extends"
+    },
+    {
+      "source": "mcp",
+      "target": "mcp-tasks",
+      "label": "extends"
+    },
+    {
+      "source": "mcp-elicitation",
+      "target": "mcp-tasks",
+      "label": "enables"
+    },
+    {
+      "source": "mcp-sampling",
+      "target": "mcp-tasks",
+      "label": "enables"
+    },
+    {
+      "source": "mcp-auth",
+      "target": "mcp-transport",
+      "label": "secures"
+    },
+    {
+      "source": "mcp",
+      "target": "structured-output",
+      "label": "extends"
+    },
+    {
+      "source": "agents",
+      "target": "agent-frameworks",
+      "label": "built with"
+    },
+    {
+      "source": "agent-frameworks",
+      "target": "mcp",
+      "label": "integrates"
+    },
+    {
+      "source": "agent-frameworks",
+      "target": "a2a",
+      "label": "integrates"
+    },
+    {
+      "source": "agents",
+      "target": "agent-security",
+      "label": "requires"
+    },
+    {
+      "source": "mcp",
+      "target": "agent-security",
+      "label": "requires"
+    },
+    {
+      "source": "llms",
+      "target": "rag",
+      "label": "enhanced by"
+    },
+    {
+      "source": "mcp",
+      "target": "rag",
+      "label": "enables"
+    },
+    {
+      "source": "agents",
+      "target": "rag",
+      "label": "uses"
+    },
+    {
+      "source": "agents",
+      "target": "agent-memory",
+      "label": "requires"
+    },
+    {
+      "source": "rag",
+      "target": "agent-memory",
+      "label": "part of"
+    },
+    {
+      "source": "agent-memory",
+      "target": "skills",
+      "label": "related"
+    }
+  ]
+}
