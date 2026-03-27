@@ -248,6 +248,41 @@
           "desc": "First crawl. Page has 4423 characters of content.",
           "source": "https://gofastmcp.com/",
           "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Model Context Protocol Blog",
+          "desc": "First crawl. Page has 2503 characters of content.",
+          "source": "https://blog.modelcontextprotocol.io/",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Architecture overview - Model Context Protocol",
+          "desc": "First crawl. Page has 21632 characters of content.",
+          "source": "https://modelcontextprotocol.io/docs/learn/architecture",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: https://modelcontextprotocol.io/specification/2025-11-25/server/tools.md",
+          "desc": "First crawl. Page has 12681 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/server/tools.md",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - modelcontextprotocol/modelcontextprotocol: Specification and documentation for the Model Context Protocol · GitHub",
+          "desc": "First crawl. Page has 5537 characters of content.",
+          "source": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Welcome to FastMCP - FastMCP",
+          "desc": "First crawl. Page has 4413 characters of content.",
+          "source": "https://gofastmcp.com/",
+          "tag": "new"
         }
       ],
       "sources": [
@@ -514,6 +549,41 @@
           "desc": "First crawl. Page has 8493 characters of content.",
           "source": "https://github.com/anthropics/skills",
           "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Overview - Agent Skills",
+          "desc": "First crawl. Page has 2790 characters of content.",
+          "source": "https://agentskills.io",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - modelcontextprotocol/experimental-ext-skills: Experimental exploration of skills discovery and distribution through MCP primitives. Maintained by the Skills Over MCP Interest Group. · GitHub",
+          "desc": "First crawl. Page has 10404 characters of content.",
+          "source": "https://github.com/modelcontextprotocol/experimental-ext-skills",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Overview - Agent Skills",
+          "desc": "First crawl. Page has 2790 characters of content.",
+          "source": "https://agentskills.io/",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - agentskills/agentskills: Specification and documentation for Agent Skills · GitHub",
+          "desc": "First crawl. Page has 4801 characters of content.",
+          "source": "https://github.com/agentskills/agentskills",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - anthropics/skills: Public repository for Agent Skills · GitHub",
+          "desc": "First crawl. Page has 8493 characters of content.",
+          "source": "https://github.com/anthropics/skills",
+          "tag": "new"
         }
       ],
       "sources": [
@@ -624,6 +694,20 @@
           "desc": "First crawl. Page has 23631 characters of content.",
           "source": "https://github.com/cloudflare/agent-skills-discovery-rfc",
           "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - modelcontextprotocol/registry: A community driven registry service for Model Context Protocol (MCP) servers. · GitHub",
+          "desc": "First crawl. Page has 10268 characters of content.",
+          "source": "https://github.com/modelcontextprotocol/registry",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - cloudflare/agent-skills-discovery-rfc: A mechanism for discovering Agent Skills using the .well-known URI path prefix as specified in RFC 8615 for discovering Agent Skills. · GitHub",
+          "desc": "First crawl. Page has 23631 characters of content.",
+          "source": "https://github.com/cloudflare/agent-skills-discovery-rfc",
+          "tag": "new"
         }
       ],
       "sources": [
@@ -718,6 +802,20 @@
           "desc": "First crawl. Page has 38 characters of content.",
           "source": "https://a2a-protocol.org/",
           "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Redirecting",
+          "desc": "First crawl. Page has 38 characters of content.",
+          "source": "https://a2a-protocol.org",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Redirecting",
+          "desc": "First crawl. Page has 38 characters of content.",
+          "source": "https://a2a-protocol.org/",
+          "tag": "new"
         }
       ],
       "sources": [
@@ -765,6 +863,13 @@
         },
         {
           "date": "2026-03-26",
+          "title": "Content updated: A2A and MCP - A2A Protocol",
+          "desc": "First crawl. Page has 7693 characters of content.",
+          "source": "https://a2a-protocol.org/latest/topics/a2a-and-mcp/",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
           "title": "Content updated: A2A and MCP - A2A Protocol",
           "desc": "First crawl. Page has 7693 characters of content.",
           "source": "https://a2a-protocol.org/latest/topics/a2a-and-mcp/",
@@ -857,6 +962,13 @@
         },
         {
           "date": "2026-03-26",
+          "title": "Content updated: GitHub - google/A2UI · GitHub",
+          "desc": "First crawl. Page has 10194 characters of content.",
+          "source": "https://github.com/google/a2ui",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
           "title": "Content updated: GitHub - google/A2UI · GitHub",
           "desc": "First crawl. Page has 10194 characters of content.",
           "source": "https://github.com/google/a2ui",
@@ -958,6 +1070,20 @@
           "desc": "First crawl. Page has 5516 characters of content.",
           "source": "https://github.com/modelcontextprotocol/ext-auth",
           "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization.md",
+          "desc": "First crawl. Page has 40488 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization.md",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - modelcontextprotocol/ext-auth: Extensions to authorization · GitHub",
+          "desc": "First crawl. Page has 5516 characters of content.",
+          "source": "https://github.com/modelcontextprotocol/ext-auth",
+          "tag": "new"
         }
       ],
       "sources": [
@@ -1021,6 +1147,13 @@
           "desc": "First crawl. Page has 11523 characters of content.",
           "source": "https://modelcontextprotocol.io/docs/concepts/transports",
           "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Transports - Model Context Protocol",
+          "desc": "First crawl. Page has 11523 characters of content.",
+          "source": "https://modelcontextprotocol.io/docs/concepts/transports",
+          "tag": "new"
         }
       ],
       "sources": [
@@ -1076,6 +1209,13 @@
           "date": "2026-03-26",
           "title": "Content updated: Understanding MCP clients - Model Context Protocol",
           "desc": "First crawl. Page has 12891 characters of content.",
+          "source": "https://modelcontextprotocol.io/docs/learn/client-concepts",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Understanding MCP clients - Model Context Protocol",
+          "desc": "First crawl. Page has 12876 characters of content.",
           "source": "https://modelcontextprotocol.io/docs/learn/client-concepts",
           "tag": "new"
         }
@@ -1134,6 +1274,13 @@
           "desc": "First crawl. Page has 29161 characters of content.",
           "source": "https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation.md",
           "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation.md",
+          "desc": "First crawl. Page has 29161 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation.md",
+          "tag": "new"
         }
       ],
       "sources": [
@@ -1187,6 +1334,13 @@
         },
         {
           "date": "2026-03-26",
+          "title": "Content updated: https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks.md",
+          "desc": "First crawl. Page has 34351 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks.md",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
           "title": "Content updated: https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks.md",
           "desc": "First crawl. Page has 34351 characters of content.",
           "source": "https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks.md",
@@ -1338,6 +1492,27 @@
           "desc": "First crawl. Page has 13991 characters of content.",
           "source": "https://github.com/pydantic/pydantic-ai",
           "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - langchain-ai/langgraph: Build resilient language agents as graphs. · GitHub",
+          "desc": "First crawl. Page has 7947 characters of content.",
+          "source": "https://github.com/langchain-ai/langgraph",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - crewAIInc/crewAI: Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks. · GitHub",
+          "desc": "First crawl. Page has 31013 characters of content.",
+          "source": "https://github.com/crewAIInc/crewAI",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: GitHub - pydantic/pydantic-ai: AI Agent Framework, the Pydantic way · GitHub",
+          "desc": "First crawl. Page has 13990 characters of content.",
+          "source": "https://github.com/pydantic/pydantic-ai",
+          "tag": "new"
         }
       ],
       "sources": [
@@ -1395,6 +1570,13 @@
           "date": "2026-03-26",
           "title": "Content updated: Security Best Practices - Model Context Protocol",
           "desc": "First crawl. Page has 23701 characters of content.",
+          "source": "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices",
+          "tag": "new"
+        },
+        {
+          "date": "2026-03-27",
+          "title": "Content updated: Security Best Practices - Model Context Protocol",
+          "desc": "First crawl. Page has 23696 characters of content.",
           "source": "https://modelcontextprotocol.io/specification/2025-11-25/basic/security_best_practices",
           "tag": "new"
         }
